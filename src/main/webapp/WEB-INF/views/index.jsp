@@ -14,12 +14,12 @@
   <hr />
 
   <h3>Single File Upload</h3>
-  <form action="/upload" method="post">
+  <form action="/upload" method="post" accept-charset="utf-8" enctype="multipart/form-data">
     <table>
       <tr>
         <td>Select File</td>
-        <td><input type="file" name="file"></td>
         <td><input type="text" name ="fileName"></td>
+        <td><input type="file" name="file"></td>
         <td><input type="submit" value="Upload"></td>
       </tr>
     </table>
@@ -27,6 +27,7 @@
   <br>
   <hr />
   <span style="color: red; font-size: 14px;">${displayFileName}</span>
-
+  <br>
+  <span style="color: green; font-size: 14px;">${multipartFile}</span>
 </body>
 </html>

@@ -1,1 +1,3 @@
 /home/haleymnatz/strongkey/FileUploader/src/main/java/com/uploader/UploaderController.java
+/home/haleymnatz/strongkey/FileUploader/src/main/java/com/uploader/S3Utils.java
+/home/haleymnatz/strongkey/FileUploader/src/main/java/com/uploader/AWSConfig.java
