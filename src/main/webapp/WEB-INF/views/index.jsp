@@ -28,6 +28,17 @@
   <hr />
   <span style="color: red; font-size: 14px;">${displayFileName}</span>
   <br>
-  <span style="color: green; font-size: 14px;">${multipartFile}</span>
+  
+  <a href="/list">See Your Files</a><br>
+  <table>
+  	<tr>
+  		<th>File Name</th>
+  	</tr>
+  	<c:forEach items="${objects}" var="object">
+  		<tr>
+  			<td>${object}</td>
+  		</tr>
+  	</c:forEach>
+  </table>
 </body>
 </html>
