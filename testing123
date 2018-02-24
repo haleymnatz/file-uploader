@@ -1,0 +1,27 @@
+public class Test {
+
+    public static double[] calculateGPA(int[] studentIdList, char[][] studentsGrades) {
+        for(char[] id : studentsGrades) {
+          for (char letter : id) {
+            switch (letter) {
+              case 'A': letter = 4;
+                    break;
+              case 'B': letter = 3;
+                    break;
+              case 'C': letter = 2;
+                    break;
+              default: letter = 0;
+            }
+          }
+        }
+
+        double[] gpas = new double[studentIdList.length];
+        // your code
+    }
+
+    public static void main(String[] args) {
+      int[] studentIdList = {1001, 1002};
+      char[][] studentsGrades = { { 'A', 'A', 'A', 'B' }, { 'A', 'B', 'B' } };
+      calculateGPA(studentIdList, studentsGrades);
+    }
+}

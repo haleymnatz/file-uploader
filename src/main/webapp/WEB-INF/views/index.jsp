@@ -37,6 +37,14 @@
   	<c:forEach items="${objects}" var="object">
   		<tr>
   			<td>${object}</td>
+  			<td><form action="/download" method="get">
+				<input name="objectKey" type="hidden" value="${object}">
+				<input type="submit" value="Download">
+			</form></td>
+			<td><form action="/delete" method="post">
+				<input name="objectKey" type="hidden" value="${object}">
+				<input type="submit" value="Delete">
+			</form></td>
   		</tr>
   	</c:forEach>
   </table>
