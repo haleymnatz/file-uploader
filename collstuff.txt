@@ -1,5 +1,0 @@
-WRITE TESTS FOR CURRENT CODE -->
-update query results to be viewed individually -->
-update query results to be clicked on -->
-update show page & controller to display info for unsaved recipe -->
-update show page & controller to give option to save recipe
